@@ -1,0 +1,3 @@
+### GET C_FOPayRange
+GET http://localhost:4004/odata/v2/service/cdsupgrade/EC_FOPayRange
+Authorization: Basic Alice

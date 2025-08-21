@@ -42,4 +42,5 @@ entity EC_FOPayRange as
         key startDate,
             minimumPay,
             maximumPay,
+            objectId
     }
