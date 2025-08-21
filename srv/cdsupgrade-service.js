@@ -32,10 +32,10 @@ module.exports = async (srv) => {
       });
       LOG._info &&
         LOG.info(
-          "EC_FOPayRange first entry minimumPay value: ",
-          res?.[0]?.minimumPay,
+          "EC_FOPayRange first entry objectId value: ",
+          res?.[0]?.objectId,
           " isInteger: ",
-          Number.isInteger(res?.[0]?.minimumPay)
+          Number.isInteger(res?.[0]?.objectId)
         );
       return res;
     } catch (err) {
