@@ -1,0 +1,3 @@
+cds env get requires.auth
+
+cds import srv/successfactors_ec_sandbox.edmx

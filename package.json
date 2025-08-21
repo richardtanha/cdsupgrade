@@ -1,0 +1,40 @@
+{
+  "name": "cdsupgrade",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.15.3",
+    "@sap-cloud-sdk/http-client": "^4.1.1",
+    "@sap-cloud-sdk/resilience": "^4.1.1",
+    "@sap/cds": "^8.3.1",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8.3.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "cov2ap": {
+        "plugin": true,
+        "path": "v2"
+      },
+      "successfactors_ec_sandbox": {
+        "kind": "odata-v2",
+        "model": "srv/external/successfactors_ec_sandbox",
+        "[development]": {
+          "credentials": {
+            "url": "https://sandbox.api.sap.com/successfactors/odata/v2/"
+          }
+        }
+      }
+    }
+  }
+}
